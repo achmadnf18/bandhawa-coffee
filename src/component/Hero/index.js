@@ -1,10 +1,14 @@
 import React from "react";
+import HeroText from "./HeroText";
 
 export default function Hero() {
   return (
     <>
       {/* Hero */}
-      <div className="h-screen flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img">
+      <div
+        className="h-screen flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img"
+        id="about"
+      >
         {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-7 ">
           <div className=" py-44">
             <div>
@@ -26,16 +30,8 @@ export default function Hero() {
           </div>
         </div> */}
         {/* Overlay */}
-        <div className="absolute top-0 left-0 right-0 bottom-0 bg-black/70 z-[2]" />
-        <div className="px-10 text-white z-[2]">
-          <h1 className="text-white md:text-5xl text-3xl font-semibold">
-            Bandhawa Coffee
-          </h1>
-          <p className="font-medium md:text-xl text-lg pt-2">
-            We Process Robusta and Arabica coffee beans from the harvests of our
-            forested farmers, into array of varriants of distinctive flavors
-          </p>
-        </div>
+        <div className="absolute top-0 left-0 right-0 lg:bottom-0 md:-bottom-1 -bottom-1 bg-black/70 z-[2]" />
+        <HeroText />
       </div>
     </>
   );

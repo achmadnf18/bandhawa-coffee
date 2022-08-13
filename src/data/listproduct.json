@@ -1,0 +1,190 @@
+[
+  {
+      "id": "1",
+      "name" : "Gayo Semi Wash ",
+      "slug" : "gayo-semi-wash",
+      "description": "Aceh, Gayo",
+      "type" : "Arabica",
+      "process" : "Semi-wash",
+      "elevation" : "1500 - 1700 MASL",
+      "varieties" : "Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia",
+      "taste" : "Vanilla, Tobacco, Cinnamon, Spices"
+  },
+  {
+    "id": "2",
+    "name" : "Temanggung ",
+    "slug" : "temanggung",
+    "description": "Temanggung, West Java",
+    "type" : "Rosbusta",
+    "process" : "Washed",
+    "elevation" : "800 - 1100 MASL",
+    "varieties" : "Tugusari",
+    "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "3",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "4",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "5",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "6",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "7",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+},
+{
+  "id": "8",
+  "name" : "Temanggung ",
+  "slug" : "temanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Rosbusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body"
+}
+ 
+] 

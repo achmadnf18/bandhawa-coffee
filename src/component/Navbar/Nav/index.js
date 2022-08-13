@@ -1,12 +1,18 @@
-import React from "react";
 import NavItems from "../NavItem";
 
-export default function Nav() {
+export default function Nav({ openMenu }) {
   return (
-    <ul className="hidden sm:flex justify-end items-center space-x-10">
-      <NavItems>About Us</NavItems>
-      <NavItems>Product</NavItems>
-      <NavItems>Contact</NavItems>
-    </ul>
+    <div>
+      {/* Desktop */}
+      <ul className="hidden sm:flex items-center opacity-100 ">
+        <NavItems />
+      </ul>
+      {/* Mobile */}
+      {openMenu && (
+        <ul className="md:hidden z-[-1] absolute bg-white w-full left-0 text-black">
+          <NavItems />
+        </ul>
+      )}
+    </div>
   );
 }
