@@ -1,6 +1,5 @@
 import Link from "next/link";
 import { useState, useEffect } from "react";
-import { animateScroll as scroll } from "react-scroll";
 import Nav from "./Nav";
 
 export default function Navbar() {

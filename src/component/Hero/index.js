@@ -6,7 +6,7 @@ export default function Hero() {
     <>
       {/* Hero */}
       <div
-        className="h-screen flex items-center justify-center mb-12 bg-fixed bg-center bg-cover custom-img"
+        className="h-screen flex items-center justify-center bg-fixed bg-center bg-cover custom-img"
         id="about"
       >
         {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-7 ">
