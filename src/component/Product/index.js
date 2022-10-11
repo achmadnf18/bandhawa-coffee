@@ -1,37 +1,33 @@
 import { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
-import ProdukList from "../../data/listproduct.json";
+// import ProdukList from "../../data/listproduct.json";
 import ListProduct from "./ListProduct";
-export default function Product() {
-  const [productList, setProductList] = useState(ProdukList);
+export default function Product({ getAllProductBeans }) {
+  const [productList, setProductList] = useState(getAllProductBeans);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 10;
+  const itemsPerPage = 7;
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    setProductList(ProdukList?.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(ProdukList?.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, ProdukList]);
+    setProductList(getAllProductBeans?.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(getAllProductBeans?.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, getAllProductBeans]);
 
   const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % ProdukList?.length;
+    const newOffset =
+      (event.selected * itemsPerPage) % getAllProductBeans?.length;
     setItemOffset(newOffset);
   };
   return (
-    <section id="product" className=" section-product h-fit ">
-      <h2 className="lg:text-4xl sm:text-2xl text-xl font-semibold text-center  ">
-        List Product
-      </h2>
-      {/* List Name  */}
+    <section id="product" className="section-product h-fit py-10 ">
       <div className="container mx-auto">
-        <div className="hidden md:grid grid-cols-12  gap-3 py-2 font-semibold pt-14">
-          <div className="col-span-3">Product Name</div>
-          <div className="col-span-2">Location</div>
-          <div className="col-span-2">Type</div>
-          <div className="col-span-2">Process</div>
-          <div className="col-span-3">Varieties</div>
-        </div>
+        {/* <h2 className="text-xl font-light italic text-center pb-14 ">
+          We Process Robusta and Arabica coffee beans from the harvests of our
+          forested farmers, into array of varriants of distinctive flavors
+        </h2> */}
+        {/* List Name  */}
+
         {/* List Product */}
         <div className="md:pt-2 pt-8 pb-10">
           <ListProduct productList={productList} />

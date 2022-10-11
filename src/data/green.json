@@ -1,0 +1,149 @@
+[
+  {
+    "id": "1",
+    "name" : "Gayo Semi Wash ",
+    "slug" : "gayo-semi-wash",
+    "description": "Aceh, Gayo",
+    "type" : "Arabica",
+    "process" : "Semi-wash",
+    "elevation" : "1500 - 1700 MASL",
+    "varieties" : "Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia",
+    "taste" : "Vanilla, Tobacco, Cinnamon, Spices",
+    "foto" : "/assets/beans/gayo-semi-wash.png"
+},{
+  "id": "2",
+  "name" : "Temanggung ",
+  "slug" : "tamanggung",
+  "description": "Temanggung, West Java",
+  "type" : "Robusta",
+  "process" : "Washed",
+  "elevation" : "800 - 1100 MASL",
+  "varieties" : "Tugusari",
+  "taste" : "Dark Choco, Speces, Full Body",
+  "foto" : "/assets/beans/temanggung.png"
+},{
+  "id": "6",
+  "name" : "Gayo Natural ",
+  "slug" : "gayo-natural",
+  "description": "Aceh, Gayo",
+  "type" : "Arabica",
+  "process" : "Natural ",
+  "elevation" : "-",
+  "varieties" : "Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia",
+  "taste" : "Guava, Well rounded, Brown sugar, Floral",
+  "foto" : "/assets/beans/gayo-natural.png"
+},{
+  "id": "8",
+  "name" : "Gayo Honey",
+  "slug" : "gayo-honey",
+  "description": "Aceh, Gayo",
+  "type" : "Arabica",
+  "process" : "Honey",
+  "elevation" : "1500 - 1700 MASL",
+  "varieties" : "Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia",
+  "taste" : "Berries, Molasses, Mocca",
+  "foto" : "/assets/beans/gayo-honey.png"
+},{
+  "id": "9",
+  "name" : "Puntang",
+  "slug" : "puntang",
+  "description": "Puntang, West Java",
+  "type" : "Arabica",
+  "process" : "Natural",
+  "elevation" : "1200 - 1600 MASL",
+  "varieties" : "Mix (Typica, Lini S, Ateng super)",
+  "taste" : "Bright acidity, Lemon, Tea like",
+  "foto" : "/assets/beans/puntang.png"
+},{
+  "id": "10",
+  "name" : "Toraja Mamasa",
+  "slug" : "toraja-mamasa",
+  "description": "-",
+  "type" : "-",
+  "process" : "-",
+  "elevation" : "-",
+  "varieties" : "-",
+  "taste" : "-",
+  "foto" : "/assets/beans/toraja-mamasa.png"
+},
+{
+  "id": "12",
+  "name" : "Kamojang",
+  "slug" : "kamojang",
+  "description": "Papandayan, West Java",
+  "type" : "Arabica",
+  "process" : "Natural",
+  "elevation" : "1300 - 1500 MASL",
+  "varieties" : "Mix (Kartika, Typica, Lini S, Sigararutang)",
+  "taste" : "Berries, Medium body, clean after taste",
+  "foto" : "/assets/beans/kamojang.png"
+},{
+  "id": "15",
+  "name" : "Flores Bajawa Wolowio ",
+  "slug" : "flores-bajawa-wolowio",
+  "description": "Flores Bajawa",
+  "type" : "Arabica",
+  "process" : "Natural",
+  "elevation" : "1300 - 1500 MASL",
+  "varieties" : "Typica",
+  "taste" : "Reminds green apple , Star fruit , wild berries, caramel sweet",
+  "foto" : "/assets/beans/flores-bajawa-wolowio.png"
+},{
+  "id": "16",
+  "name" : "Halu Natural",
+  "slug" : "halu-natural",
+  "description": "Halu",
+  "type" : "Arabica",
+  "process" : "Submerge anaerob",
+  "elevation" : "1200 - 1500 MASL",
+  "varieties" : "Sigararuntang , Lini S",
+  "taste" : "Malic acid pleasant passion fruit , brown sugar",
+  "foto" : "/assets/beans/halu-natural.png"
+},{
+  "id": "17",
+  "name" : "Halu Double Soak",
+  "slug" : "halu-double-soak",
+  "description": "Halu",
+  "type" : "Arabica",
+  "process" : "Full Washed Double Soak ",
+  "elevation" : "1200 - 1500 MASL",
+  "varieties" : "Sigararuntang , Lini S",
+  "taste" : "Caramel, lychee flowery hibiscus brown sugar",
+  "foto" : "/assets/beans/halu-double-soak.png"
+},{
+  "id": "18",
+  "name" : "Kintamani",
+  "slug" : "kintamani",
+  "description": "Kintamani Bali ",
+  "type" : "Arabica",
+  "process" : "Full Washed",
+  "elevation" : "1200 - 1350 MASL",
+  "varieties" : "Mix : Kopyol , Kartika , USDA",
+  "taste" : "Floral , Orange , Chocolate , Raspberry, Apple",
+  "foto" : "/assets/beans/kintamani.png"
+},
+{
+  "id": "19",
+  "name" : "Argopuro",
+  "slug" : "argopuro",
+  "description": "Argopuro, East Java",
+  "type" : "Arabica",
+  "process" : "Natural",
+  "elevation" : "1200 - 1400 MASL",
+  "varieties" : "Mix (Kartika, Lini S)",
+  "taste" : "Honeydew, Cherry, White Grape, Strawberry",
+  "foto" : "/assets/beans/argopuro.png"
+},
+{
+  "id": "21",
+  "name" : "Gayo Full Wash",
+  "slug" : "gayo-full-wash",
+  "description": "Aceh, Gayo",
+  "type" : "Arabica",
+  "process" : "Washed (Full wash)",
+  "elevation" : "1500 - 1700 MASL",
+  "varieties" : "Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia",
+  "taste" : "Herbs, Spicy, Dark Choco, Fruity notes",
+  "foto" : "/assets/beans/gayo-full-wash.png"
+}
+]

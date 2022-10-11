@@ -2,7 +2,7 @@ import React from "react";
 import { PhoneIcon } from "@heroicons/react/outline";
 export default function Contact() {
   return (
-    <section id="contact" className="bg-gray-100 mt-20 ">
+    <section id="contact" className="bg-gray-100 ">
       <div className="container mx-auto py-7">
         <h2 className="lg:text-4xl sm:text-2xl text-xl font-semibold text-center">
           Contact Us

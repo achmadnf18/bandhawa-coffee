@@ -1,0 +1,15 @@
+[
+  {
+    "id": "2",
+    "name" : "Temanggung ",
+    "slug" : "tamanggung",
+    "description": "Temanggung, West Java",
+    "type" : "Robusta",
+    "process" : "Washed",
+    "elevation" : "800 - 1100 MASL",
+    "varieties" : "Tugusari",
+    "taste" : "Dark Choco, Speces, Full Body",
+    "foto" : "/assets/beans/temanggung.png"
+  }
+
+]

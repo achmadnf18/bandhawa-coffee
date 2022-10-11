@@ -1,38 +1,40 @@
 import React from "react";
 import HeroText from "./HeroText";
-
 export default function Hero() {
   return (
     <>
       {/* Hero */}
-      <div
-        className="h-screen flex items-center justify-center bg-fixed bg-center bg-cover custom-img"
-        id="about"
-      >
-        {/* <div className="grid lg:grid-cols-2 grid-cols-1 gap-7 ">
-          <div className=" py-44">
-            <div>
-              <h1 className="text-[#007979] md:text-5xl text-3xl font-semibold">
-                Bandhawa
-              </h1>
-              <h1 className="text-[#101B49] md:text-5xl text-3xl font-semibold">
-                Coffee
-              </h1>
-              <p className="font-medium md:text-xl text-lg pt-2">
-                We Process Robusta and Arabica coffee beans from the harvests of
-                our forested farmers, into array of varriants of distinctive
-                flavors
-              </p>
-            </div>
-          </div>
-          <div className="py-36 pl-20">
-            <img src="/assets/logo.png" />
+      <section className="  hero-image sm:bg-center bg-top bg-cover  bg-no-repeat pt-10 pb-44   ">
+        <div>
+          <HeroText />
+          {/* <div className="flex items-center justify-center gap-10 relative ">
+            <button className="uppercase px-6 py-2 rounded-full border border-white bg-transparent hover:bg-white text-white hover:text-black">
+              {" "}
+              Watch Us
+            </button>
+            <button className="uppercase px-6 py-2 rounded-full border border-white bg-transparent hover:bg-white text-white hover:text-black">
+              {" "}
+              Our Catalogue
+            </button>
+          </div> */}
+        </div>
+        {/* <div className="container mx-auto text-center ">
+          <div className="flex items-center lg:justify-between justify-center lg:gap-0 sm:gap-14 gap-4 mx-2">
+            <img
+              src="/assets/left-right-paralax.png"
+              className="lg:w-[100px] md:w-[60px] sm:w-[40px] w-[30px]"
+            />
+            <img 
+              src="/assets/paralax.png"
+              className="lg:w-[700px] md:w-[500px] sm:w-[350px] w-[260px] md:mb-20 sm:mb-14 mb-10 "
+            />
+            <img
+              src="/assets/left-right-paralax.png"
+              className="lg:w-[100px] md:w-[60px] sm:w-[40px] w-[30px] "
+            />
           </div>
         </div> */}
-        {/* Overlay */}
-        <div className="absolute top-0 left-0 right-0 lg:bottom-0 md:-bottom-1 -bottom-1 bg-black/70 z-[2]" />
-        <HeroText />
-      </div>
+      </section>
     </>
   );
 }
