@@ -1,9 +1,7 @@
 import { ChevronRightIcon } from "@heroicons/react/outline";
 import Link from "next/link";
-import { useState } from "react";
 
 export default function RobustaBeans() {
-  const [isOpen, setIsOpen] = useState(false);
   return (
     <>
       <div
@@ -20,10 +18,7 @@ export default function RobustaBeans() {
             <div className="text-center py-6">
               <Link href="/beans/roasted-bean" passHref>
                 <a>
-                  <button
-                    onClick={() => setIsOpen(true)}
-                    className="inline-flex bg-transparent hover:scale-105 duration-150 ease-in-out transition-all  items-center justify-between gap-10  px-6 py-2.5 rounded-full text-[#027879]  text-[12px] border border-[#027879] w-full  "
-                  >
+                  <button className="inline-flex bg-transparent hover:scale-105 duration-150 ease-in-out transition-all  items-center justify-between gap-10  px-6 py-2.5 rounded-full text-[#027879]  text-[12px] border border-[#027879] w-full  ">
                     SEE OUR BEANS
                     <ChevronRightIcon className="w-4 h-4  text-[#027879]" />
                   </button>
