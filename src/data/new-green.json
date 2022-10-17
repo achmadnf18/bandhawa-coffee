@@ -1,0 +1,86 @@
+[
+  {
+    "id": "1",
+    "name" : "Aceh Gayo",
+    "slug" : "aceh-gayo-green",
+    "process" : "Wine Process",
+    "weight": "60",
+    "available": "150",
+    "taste" : "Palm Sugar, Tropical Fruits, Winey",
+    "score" : "86.0",
+    "variety":"Tim-tim, Bourbon, Ateng Super, Abyssinia",
+    "image" : "/assets/green/aceh-gayo.jpg"
+},
+{
+  "id": "2",
+  "name" : "Aceh Gayo",
+  "slug" : "aceh-gayo-natural-green",
+  "process" : "Natural",
+  "weight": "60",
+  "available": "150",
+  "taste" : "Guava, Well Rounded, Balance, Brown Sugar",
+  "score" : "85.5",
+  "variety":"Tim-tim, Bourbon, Ateng Super, Abyssinia",
+  "image" : "/assets/green/aceh-gayo-wet-green.jpg"
+},
+{
+  "id": "3",
+  "name" : "Aceh Gayo",
+  "slug" : "aceh-gayo-honey-green",
+  "process" : "Honey",
+  "weight": "60",
+  "available": "150",
+  "taste" : "Berries, Molasses, Syrupy",
+  "score" : "85.0",
+  "variety":"Tim-tim, Bourbon, Ateng Super, Abyssinia",
+  "image" : "/assets/green/aceh-gayo-honey-green.jpg"
+},
+{
+  "id": "4",
+  "name" : "Aceh Gayo",
+  "slug" : "aceh-gayo-wet-green",
+  "process" : "Wet-hull",
+  "weight": "60",
+  "available": "150",
+  "taste" : "Herbs, Cheddar, Star fruits, Brown Suga",
+  "score" : "84.0",
+  "variety":"Tim-tim, Bourbon, Ateng Super, Abyssinia",
+  "image" : "/assets/green/aceh-gayo-natural-green.jpg"
+},
+{
+  "id": "5",
+  "name" : "Batak",
+  "slug" : "batak-green",
+  "process" : "Wet-hull",
+  "weight": "60",
+  "available": "150",
+  "taste" : "Vanilla, Tobacco, Cinnamon, Spices",
+  "score" : "84.5",
+  "variety":"Ateng, Jember, Tim-tim",
+  "image" : "/assets/green/batak-green.jpg"
+},
+{
+  "id": "6",
+  "name" : "Java Ijen",
+  "slug" : "java-ijen-green",
+  "process" : "Natural Anaerobic",
+  "weight": "60",
+  "available": "150",
+  "taste" : "Mango, Citrus,Caramel",
+  "score" : "87.5",
+  "variety":"USDA 762",
+  "image" : "/assets/green/java-ijen-green.jpg"
+},
+{
+  "id": "7",
+  "name" : "Aceh Gayo",
+  "slug" : "aceh-gayo-fully-green",
+  "process" : "Fully Washed",
+  "weight": "60",
+  "available": "150",
+  "taste" : "Brown Sugar, Heavy Body, Orange",
+  "score" : "85.0",
+  "variety":"Tim-tim, Bourbon, Ateng Super, Abyssinia",
+  "image" : "/assets/green/aceh-gayo-fully-green.jpg"
+}
+]

@@ -7,6 +7,7 @@ import Layout from "../../../src/layout";
 import SliderProduct from "../../../src/component/SliderProduct";
 import { ChevronLeftIcon } from "@heroicons/react/outline";
 import Link from "next/link";
+import BannerHeader from "@/component/BannerHeader/BannerHeader";
 // export const API_SERVER = process.env.api_v1;
 
 // export default function ProductDetails({ getBeansSlug, getAllProduct }) {
@@ -28,16 +29,8 @@ export default function ProductDetails() {
   };
 
   return (
-    <Layout pageTitle={`Coffee - Temanggung`}>
-      <div className="flex items-center justify-center bg-fixed bg-center bg-cover bg-no-repeat arabica-img cursor-pointer">
-        <div className="bg-black/70 w-full">
-          <div className="flex items-center justify-center align-middle py-44 ">
-            <h3 className="sm:mt-0 mt-20 uppercase text-white md:tracking-[2rem] sm:tracking-[1rem] tracking-[0.5rem] md:pl-4 lg:text-4xl md:text-3xl sm:text-2xl text-xl  text-center leading-none drop-shadow-md">
-              Beans
-            </h3>
-          </div>
-        </div>
-      </div>
+    <Layout pageTitle={`Detail-Coffee`}>
+      <BannerHeader title="beans" />
       {/* Detail Produk */}
       <section>
         <div className="container mx-auto md:px-4 px-10 pt-20 pb-10">
@@ -100,7 +93,7 @@ export default function ProductDetails() {
                   {DetailProduct.varieties}
                 </p>
               </div>
-              <div className="flex items-center gap-5">
+              {/* <div className="flex items-center gap-5">
                 <Link href="/beans/green-bean" passHref>
                   <a className="text-xs bg-[#101B49] gap-3 inline-flex px-4 py-2 rounded-full items-center justify-between text-white">
                     Green Beans
@@ -111,7 +104,7 @@ export default function ProductDetails() {
                     Roasted Beans
                   </a>
                 </Link>
-              </div>
+              </div> */}
             </div>
 
             {/* Right */}
@@ -121,10 +114,6 @@ export default function ProductDetails() {
                   src={DetailProduct?.foto}
                   alt="product.jpg"
                   className="object-contain sm:w-[450px] sm:h-[450px] w-[200px] h-[200px]"
-                  // width={450}
-                  // height={450}
-                  // layout="fill"
-                  // objectFit="contain"
                 />
               </div>
             </div>

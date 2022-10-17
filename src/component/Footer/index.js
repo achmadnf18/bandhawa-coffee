@@ -13,7 +13,7 @@ export default function Footer() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="mailto:yuliana.astuti@outlook.com?subject = Feedback&body = Message"
+          href="mailto:yuliana.astuti@outlook.com"
         >
           <img src="/assets/footer/email.svg" className="w-10 h-10" />
         </a>
@@ -24,7 +24,7 @@ export default function Footer() {
         >
           <img src="/assets/footer/ig.svg" className="w-10 h-10" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://wa.me/681284137199">
+        <a target="_blank" rel="noreferrer" href="https://wa.me/081284137199">
           <img src="/assets/footer/wa.svg" className="w-10 h-10" />
         </a>
       </div>

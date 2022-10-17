@@ -5,7 +5,7 @@ import Aos from "aos";
 import "aos/dist/aos.css";
 import { QueryClientProvider } from "@tanstack/react-query";
 import getQueryClient from "@/config/react-query";
-import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
+// import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useState } from "react";
 
 function MyApp({ Component, pageProps }) {
@@ -17,8 +17,10 @@ function MyApp({ Component, pageProps }) {
 
   return (
     <QueryClientProvider client={queryClient}>
+      {/* <MyContextProvider> */}
       <Component {...pageProps} />
-      <ReactQueryDevtools />
+      {/* <ReactQueryDevtools /> */}
+      {/* </MyContextProvider> */}
     </QueryClientProvider>
   );
 }
