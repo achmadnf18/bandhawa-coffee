@@ -1,5 +1,29 @@
 import { useState, useEffect } from "react";
 import Link from "next/link";
+
+const navList = [
+  {
+    id: 1,
+    title: "About Us",
+    navigasi: "/",
+  },
+  {
+    id: 2,
+    title: "PHYLOSHOPHY",
+    navigasi: "/phyloshophy",
+  },
+  {
+    id: 3,
+    title: "beans",
+    navigasi: "/beans",
+  },
+  {
+    id: 4,
+    title: "contact",
+    navigasi: "/contact",
+  },
+];
+
 export default function NavItems() {
   const [scrollEffect, setScrollEffect] = useState(false);
 
@@ -17,112 +41,42 @@ export default function NavItems() {
   return (
     <>
       {/* Mobile */}
-      <li className="mx-4 my-6 md:my-0 sm:hidden">
-        <Link href="/" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase "
-                : "text-black md:text-lg font-medium cursor-pointer uppercase "
-            }
-          >
-            About Us
-          </h3>
-        </Link>
-      </li>
-      <li className="mx-4 my-6 md:my-0 sm:hidden">
-        <Link href="/phyloshophy" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase "
-                : "text-black md:text-lg font-medium cursor-pointer uppercase "
-            }
-          >
-            PHYLOSHOPHY
-          </h3>
-        </Link>
-      </li>
-      <li className="mx-4 my-6 md:my-0 sm:hidden">
-        <Link href="/beans" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase "
-                : "text-black md:text-lg font-medium cursor-pointer uppercase "
-            }
-          >
-            beans
-          </h3>
-        </Link>
-      </li>
-      <li className="mx-4 my-6 md:my-0 sm:hidden">
-        <Link href="/contact" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase "
-                : "text-black md:text-lg font-medium cursor-pointer uppercase "
-            }
-          >
-            contact
-          </h3>
-        </Link>
-      </li>
+      {navList?.map((row) => {
+        return (
+          <li className="mx-4 my-6 md:my-0 sm:hidden" key={row?.id}>
+            <Link href={`${row?.navigasi}`} passHref>
+              <h3
+                className={
+                  scrollEffect
+                    ? "text-black md:text-lg font-medium cursor-pointer uppercase "
+                    : "text-black md:text-lg font-medium cursor-pointer uppercase "
+                }
+              >
+                {row?.title}
+              </h3>
+            </Link>
+          </li>
+        );
+      })}
 
       {/* Desktop */}
-      <li className="mx-4 my-6 md:my-0 md:flex hidden">
-        <Link href="/" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-                : "text-white md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8"
-            }
-          >
-            About Us
-          </h3>
-        </Link>
-      </li>
-      <li className="mx-4 my-6 md:my-0 md:flex hidden">
-        <Link href="/phyloshophy" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-                : "text-white md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-            }
-          >
-            PHYLOSHOPHY
-          </h3>
-        </Link>
-      </li>
-      <li className="mx-4 my-6 md:my-0 md:flex hidden">
-        <Link href="/beans" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-                : "text-white md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-            }
-          >
-            beans
-          </h3>
-        </Link>
-      </li>
-      <li className="mx-4 my-6 md:my-0 md:flex hidden">
-        <Link href="/contact" passHref>
-          <h3
-            className={
-              scrollEffect
-                ? "text-black md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-                : "text-white md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
-            }
-          >
-            contact
-          </h3>
-        </Link>
-      </li>
+      {navList?.map((row) => {
+        return (
+          <li className="mx-4 my-6 md:my-0 md:flex hidden" key={row?.id}>
+            <Link href={`${row?.navigasi}`} passHref>
+              <h3
+                className={
+                  scrollEffect
+                    ? "text-black md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8 "
+                    : "text-white md:text-lg font-medium cursor-pointer uppercase hover:underline hover:underline-offset-8"
+                }
+              >
+                {row?.title}
+              </h3>
+            </Link>
+          </li>
+        );
+      })}
     </>
   );
 }

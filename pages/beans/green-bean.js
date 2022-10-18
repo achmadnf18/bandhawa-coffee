@@ -27,7 +27,12 @@ export default function GreenBeans() {
         <section title="green-bean" className="container mx-auto py-10">
           <center>
             {" "}
-            <a className="text-xs bg-[#101B49] px-4 py-2 text-white rounded-full">
+            <a
+              href="https://docs.google.com/document/d/1r0fxf3WD0s-D-5VP9fccmW2PxxtbRY1Z/edit?usp=sharing&ouid=109112680880859137819&rtpof=true&sd=true"
+              target="_blank"
+              rel="noreferrer noopener"
+              className="text-xs bg-[#101B49] px-4 py-2 text-white rounded-full"
+            >
               Download Offer Sheet
             </a>
           </center>
