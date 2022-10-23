@@ -1,4 +1,5 @@
-import { AnnotationIcon, HomeIcon, UserIcon } from "@heroicons/react/outline";
+import { HomeIcon, UserIcon } from "@heroicons/react/outline";
+// import { AnnotationIcon, HomeIcon, UserIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -51,7 +52,7 @@ export default function SideBar() {
           </Link>
         </div>
 
-        <div
+        {/* <div
           className={
             router.pathname == "/admin/dashboard/teams"
               ? "flex items-center gap-2 py-2 bg-[#F3F4F5] rounded-md pl-5"
@@ -84,7 +85,7 @@ export default function SideBar() {
               Logout
             </a>
           </Link>
-        </div>
+        </div> */}
       </div>
     </div>
   );

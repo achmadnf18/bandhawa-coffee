@@ -1,3 +1,4 @@
+import { useProducts } from "@/api/service/useProducts";
 import BannerHeader from "@/component/BannerHeader/BannerHeader";
 import SliderProduct from "@/component/SliderProduct";
 import Layout from "@/layout";
@@ -5,11 +6,16 @@ import { ChevronLeftIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
-import ListProduct from "../../../src/data/new-green.json";
+export const BASE_API_IMAGE = process.env.api_image;
+
 export default function DetailGreenBeans() {
   const router = useRouter();
   const idProduct = router?.query?.id;
-  const getDataById = ListProduct?.find((item) => item?.id === idProduct);
+  const service = useProducts();
+  const doFetch = service?.getListProduct();
+  const getList = doFetch?.data?.data;
+  const filterByBeans = getList?.filter((row) => row?.beans === "Green");
+  const getDataById = filterByBeans?.find((item) => item?.id == idProduct);
   const detailProduct = {
     id: getDataById?.id,
     name: getDataById?.name,
@@ -89,7 +95,7 @@ export default function DetailGreenBeans() {
             <div className="flex items-center justify-center">
               <div className=" ">
                 <img
-                  src={detailProduct?.image}
+                  src={`${BASE_API_IMAGE}/${detailProduct?.image}`}
                   alt="product.jpg"
                   className="object-contain sm:w-[450px] sm:h-[450px] w-[200px] h-[200px]"
                 />

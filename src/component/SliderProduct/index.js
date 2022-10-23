@@ -30,7 +30,7 @@ export default function SliderProduct() {
   return (
     <div className="mr-2 pt-6">
       <h2 className="md:text-4xl text-2xl uppercase font-bold text-center py-2">
-        another arabica
+        another beans
       </h2>
       <Carousel
         responsive={responsive}

@@ -1,52 +1,54 @@
-import { useState, useEffect } from "react";
+// import { useState, useEffect } from "react";
 import Layout from "../../src/layout";
 
 import Link from "next/link";
-import Roasted from "../../src/data/roasted.json";
-import ReactPaginate from "react-paginate";
+// import ReactPaginate from "react-paginate";
+import BannerHeader from "@/component/BannerHeader/BannerHeader";
+import { useProducts } from "@/api/service/useProducts";
+import Loading from "@/component/Loading";
+export const BASE_API_IMAGE = process.env.api_image;
+
 export default function RoastedBeans() {
-  const [productList, setProductList] = useState(Roasted);
-  const [pageCount, setPageCount] = useState(0);
-  const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 5;
+  const service = useProducts();
+  const doFetch = service.getListProduct();
+  const getList = doFetch?.data?.data;
 
-  useEffect(() => {
-    const endOffset = itemOffset + itemsPerPage;
-    setProductList(Roasted?.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(Roasted?.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, Roasted]);
+  const getListByBeans = getList?.filter((row) => row?.beans === "Roasted");
 
-  const handlePageClick = (event) => {
-    const newOffset = (event.selected * itemsPerPage) % Roasted?.length;
-    setItemOffset(newOffset);
-  };
+  // const [productList, setProductList] = useState(getListByBeans);
+  // const [pageCount, setPageCount] = useState(0);
+  // const [itemOffset, setItemOffset] = useState(0);
+  // const itemsPerPage = 10;
+
+  // useEffect(() => {
+  //   const endOffset = itemOffset + itemsPerPage;
+  //   setProductList(getListByBeans?.slice(itemOffset, endOffset));
+  //   setPageCount(Math.ceil(getListByBeans?.length / itemsPerPage));
+  // }, [getListByBeans, itemOffset, itemsPerPage]);
+  // const handlePageClick = (event) => {
+  //   const newOffset = (event.selected * itemsPerPage) % getListByBeans?.length;
+  //   setItemOffset(newOffset);
+  // };
   return (
     <>
       <Layout pageTitle="Coffee || Roasted Beans">
-        <div className="flex items-center justify-center bg-fixed bg-center bg-cover bg-no-repeat arabica-img cursor-pointer">
-          <div className="bg-black/70 w-full">
-            <div className="flex items-center justify-center align-middle py-44 ">
-              <h3 className="sm:mt-0 mt-20 uppercase text-white md:tracking-[2rem] sm:tracking-[1rem] tracking-[0.5rem] md:pl-4 lg:text-4xl md:text-3xl sm:text-2xl text-xl  text-center leading-none drop-shadow-md">
-                Roasted Beans
-              </h3>
-            </div>
-          </div>
-        </div>
-        {/* List Arabica */}
+        <BannerHeader title="Roasted Bean" />
         <section className="container mx-auto py-10">
-          {/* <h2 className="text-xl font-light italic text-center pb-14 ">
-            We Process Arabica coffee beans from the harvests of our forested
-            farmers, into array of varriants of distinctive flavors
-          </h2> */}
-          <>
-            {productList.map((row, i) => {
+          {doFetch?.isFetching == true ? (
+            <Loading color="text-gray-200" />
+          ) : (
+            getListByBeans?.map((row, index) => {
               return (
                 <>
-                  <div className="grid grid-cols-12 gap-2  pb-4" key={i + 1}>
+                  <div
+                    className="grid grid-cols-12 gap-2  pb-4"
+                    key={index + 1}
+                    id={row?.id}
+                  >
                     <div className="bg-contain md:block hidden ">
                       <div className="">
                         <img
-                          src={row?.foto}
+                          src={`${BASE_API_IMAGE}/${row?.image}`}
                           className=" max-w-20 object-contain lg:w-[90px] lg:h-[90px] w-[80px] h-[80px]"
                           // layout="fill"
                           // objectFit="contain"
@@ -96,10 +98,9 @@ export default function RoastedBeans() {
                   </div>
                 </>
               );
-            })}
-          </>
-          {/* Pagination */}
-          <ReactPaginate
+            })
+          )}
+          {/* <ReactPaginate
             breakLabel="..."
             onPageChange={handlePageClick}
             pageRangeDisplayed={3}
@@ -108,7 +109,7 @@ export default function RoastedBeans() {
             containerClassName="flex items-center justify-end gap-3"
             disabledClassName="hidden"
             activeLinkClassName="activePagination bg-red-300 px-3 py-1  rounded-md  "
-          />
+          /> */}
         </section>
       </Layout>
     </>
