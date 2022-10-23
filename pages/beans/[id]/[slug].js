@@ -1,31 +1,34 @@
 import { useRouter } from "next/router";
-import ListProduct from "../../../src/data/listproduct.json";
 import Layout from "../../../src/layout";
-
-// API
-// import axios from "axios";
 import SliderProduct from "../../../src/component/SliderProduct";
 import { ChevronLeftIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import BannerHeader from "@/component/BannerHeader/BannerHeader";
-// export const API_SERVER = process.env.api_v1;
+import { useProducts } from "@/api/service/useProducts";
+export const BASE_API_IMAGE = process.env.api_image;
 
-// export default function ProductDetails({ getBeansSlug, getAllProduct }) {
 export default function ProductDetails() {
   const router = useRouter();
-  const idProduct = router.query.id;
+  const idProduct = router?.query?.id;
+  const service = useProducts();
+  const doFetch = service.getListProduct();
+  const getList = doFetch?.data?.data;
 
-  const getDataById = ListProduct?.find((item) => item.id === idProduct);
+  const findDataById = getList?.find((items) => items?.id == idProduct);
   const DetailProduct = {
-    id: getDataById?.id,
-    name: getDataById?.name,
-    description: getDataById?.description,
-    type: getDataById?.type,
-    process: getDataById?.process,
-    elevation: getDataById?.elevation,
-    varieties: getDataById?.varieties,
-    taste: getDataById?.taste,
-    foto: getDataById?.foto,
+    id: findDataById?.id,
+    name: findDataById?.name,
+    beans: findDataById?.beans,
+    taste: findDataById?.taste,
+    variety: findDataById?.variety,
+    score: findDataById?.score,
+    process: findDataById?.process,
+    weight: findDataById?.weight,
+    available: findDataById?.available,
+    type: findDataById?.type,
+    elevation: findDataById?.elevation,
+    image: findDataById?.image,
+    description: findDataById?.description,
   };
 
   return (
@@ -90,7 +93,7 @@ export default function ProductDetails() {
               <div className="my-12">
                 <h4 className="text-lg leading-none font-bold">Varieties</h4>
                 <p className="text-lg leading-none font-medium italic text-[#027879]">
-                  {DetailProduct.varieties}
+                  {DetailProduct.variety}
                 </p>
               </div>
               {/* <div className="flex items-center gap-5">
@@ -111,7 +114,7 @@ export default function ProductDetails() {
             <div className="flex items-center justify-center">
               <div className=" ">
                 <img
-                  src={DetailProduct?.foto}
+                  src={`${BASE_API_IMAGE}/${DetailProduct?.image}`}
                   alt="product.jpg"
                   className="object-contain sm:w-[450px] sm:h-[450px] w-[200px] h-[200px]"
                 />
@@ -125,35 +128,3 @@ export default function ProductDetails() {
     </Layout>
   );
 }
-
-// export const getServerSideProps = async (context) => {
-//   const idBeans = context.query.id;
-//   const slugBeans = context.query.slug;
-
-//   const res = await axios
-//     .get(`${API_SERVER}products/${idBeans}/${slugBeans}`)
-//     .then((res) => {
-//       return res;
-//     })
-//     .catch((err) => {
-//       return err;
-//     });
-
-//   const allData = await axios
-//     .get(`${API_SERVER}products`)
-//     .then((res) => {
-//       return res;
-//     })
-//     .catch((err) => {
-//       return err;
-//     });
-
-//   const DetailProduct = res.data;
-//   const getAllProduct = allData?.data;
-//   return {
-//     props: {
-//       getBeansSlug: getBeansSlug || null,
-//       getAllProduct: getAllProduct || null,
-//     },
-//   };
-// };

@@ -1,38 +1,34 @@
 import { useState, useEffect } from "react";
 import ReactPaginate from "react-paginate";
+import Loading from "../Loading";
 // import ProdukList from "../../data/listproduct.json";
 import ListProduct from "./ListProduct";
-export default function Product({ getAllProductBeans }) {
-  const [productList, setProductList] = useState(getAllProductBeans);
+export default function Product({ doFetch }) {
+  const getList = doFetch?.data?.data;
+  const [productList, setProductList] = useState(getList);
   const [pageCount, setPageCount] = useState(0);
   const [itemOffset, setItemOffset] = useState(0);
-  const itemsPerPage = 7;
-
+  const itemsPerPage = 10;
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
-    setProductList(getAllProductBeans?.slice(itemOffset, endOffset));
-    setPageCount(Math.ceil(getAllProductBeans?.length / itemsPerPage));
-  }, [itemOffset, itemsPerPage, getAllProductBeans]);
+    setProductList(getList?.slice(itemOffset, endOffset));
+    setPageCount(Math.ceil(getList?.length / itemsPerPage));
+  }, [itemOffset, itemsPerPage, getList]);
 
   const handlePageClick = (event) => {
-    const newOffset =
-      (event.selected * itemsPerPage) % getAllProductBeans?.length;
+    const newOffset = (event.selected * itemsPerPage) % getList?.length;
     setItemOffset(newOffset);
   };
   return (
     <section id="product" className="section-product h-fit py-10 ">
       <div className="container mx-auto">
-        {/* <h2 className="text-xl font-light italic text-center pb-14 ">
-          We Process Robusta and Arabica coffee beans from the harvests of our
-          forested farmers, into array of varriants of distinctive flavors
-        </h2> */}
-        {/* List Name  */}
-
-        {/* List Product */}
         <div className="md:pt-2 pt-8 pb-10">
-          <ListProduct productList={productList} />
+          {productList == undefined ? (
+            <Loading color="text-gray-200" />
+          ) : (
+            <ListProduct productList={productList} />
+          )}
         </div>
-        {/* Pagination */}
         <ReactPaginate
           breakLabel="..."
           onPageChange={handlePageClick}

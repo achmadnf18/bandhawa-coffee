@@ -1,19 +1,49 @@
-import { Fragment, useState } from "react";
+import { Fragment, useState, useEffect, useMemo } from "react";
 import { Dialog, Transition } from "@headlessui/react";
 import Loading from "@/component/Loading";
+import { useForm } from "react-hook-form";
 import swal from "sweetalert";
 
-export default function AddProduct({
+export default function UpdateProduct({
   isOpen,
   onClose,
-  addProducts,
-  form,
-  getList,
-  setIsOpen,
+  selectedProduct,
+  product,
+  updateProducts,
+  setIsOpenUpdate,
 }) {
   const [isLoading, setIsLoading] = useState(false);
   const [fileSend, setFileSend] = useState(null);
-  const { register, handleSubmit } = form;
+  const [list, setList] = useState({});
+
+  const form = useForm({
+    defaultValues: useMemo(() => {
+      return list;
+    }, [list]),
+    // defaultValues: {
+    //   name: list?.name,
+    //   taste: list?.taste,
+    //   variety: list?.variety,
+    //   score: list?.score,
+    //   process: list?.process,
+    //   weight: list?.weight,
+    //   available: list?.available,
+    //   type: list?.type,
+    //   beans: list?.beans,
+    //   elevation: list?.elevation,
+    //   description: list?.description,
+    // },
+    mode: "onBlur",
+  });
+
+  const { register, handleSubmit, reset } = form;
+  useEffect(() => {
+    const foundData = product?.data?.data?.find(
+      (row) => row?.id === selectedProduct
+    );
+    setList(foundData);
+    reset(foundData);
+  }, [product?.data?.data, selectedProduct]);
 
   const uploadToClient = async (event) => {
     const files = event.target.files;
@@ -35,26 +65,30 @@ export default function AddProduct({
       };
     });
   };
-  const doAdd = addProducts({
+
+  const doUpdate = updateProducts({
     onSuccess: (res) => {
       if (res) {
         setIsLoading(false);
         swal({
-          text: res?.data?.message,
+          text: "Success",
           icon: "success",
         });
-        getList?.refetch();
-        setIsOpen(false);
+        product?.refetch();
+        setIsOpenUpdate(false);
       }
     },
     onError: (err) => {
       if (err) {
         setIsLoading(false);
         swal({
-          text: err?.response?.data?.message,
+          text: "Error",
           icon: "error",
         });
       }
+    },
+    idProduct: {
+      id: selectedProduct,
     },
   });
 
@@ -65,7 +99,7 @@ export default function AddProduct({
       .replace(/([a-z])([A-Z])/g, "$1-$2")
       .replace(/[\s_]+/g, "-")
       .toLowerCase();
-    doAdd.mutate({
+    doUpdate.mutate({
       name: data?.name,
       slug: slug,
       process: data?.process,

@@ -3,10 +3,10 @@ module.exports = {
   swcMinify: true,
   trailingSlash: true,
   env: {
-    dns_v1: process.env.API_WEB,
+    api_image: process.env.BASE_API_IMAGE,
     api_v1: process.env.API_V1,
   },
   images: {
-    domains: ["localhost"],
+    domains: ["bandhawacoffeebeans.com"],
   },
 };

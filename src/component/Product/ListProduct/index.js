@@ -1,17 +1,21 @@
 import Link from "next/link";
 import React from "react";
-
+export const BASE_API_IMAGE = process.env.api_image;
 export default function ListProduct({ productList }) {
   return (
     <>
-      {productList.map((row, i) => {
+      {productList?.map((row, index) => {
         return (
           <>
-            <div className="grid grid-cols-12 gap-2  pb-4" key={i + 1}>
+            <div
+              className="grid grid-cols-12 gap-2  pb-4"
+              key={index + 1}
+              id={row?.id}
+            >
               <div className="bg-contain md:block hidden ">
                 <div className="">
                   <img
-                    src={row?.foto}
+                    src={`${BASE_API_IMAGE}/${row?.image}`}
                     className=" max-w-20 object-contain lg:w-[90px] lg:h-[90px] w-[80px] h-[80px]"
                     // layout="fill"
                     // objectFit="contain"

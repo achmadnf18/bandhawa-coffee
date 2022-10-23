@@ -110,7 +110,7 @@ export default function UpdateProductDashboard({
                   <div className="flex items-center justify-between">
                     <Dialog.Title
                       as="h3"
-                      className="md:text-lg text-sm font-semibold leading-6 text-primary"
+                      className="md:text-lg text-sm font-semibold leading-6 text-[#101B49]"
                     >
                       Form Input Product
                     </Dialog.Title>
@@ -132,7 +132,7 @@ export default function UpdateProductDashboard({
                         onChange={(e) => setName(e.target.value)}
                         required
                         placeholder="cth : Gayo Semi Wash"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Description */}
@@ -149,7 +149,7 @@ export default function UpdateProductDashboard({
                         onChange={(e) => setDescription(e.target.value)}
                         required
                         placeholder="cth : Aceh, Gayo"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Type */}
@@ -165,7 +165,7 @@ export default function UpdateProductDashboard({
                         value={type}
                         onChange={(e) => setType(e.target.value)}
                         placeholder="cth : Arabica / Robusta"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Process */}
@@ -181,7 +181,7 @@ export default function UpdateProductDashboard({
                         value={process}
                         onChange={(e) => setProcess(e.target.value)}
                         placeholder="cth : Semi-Wash"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Elevation */}
@@ -197,7 +197,7 @@ export default function UpdateProductDashboard({
                         value={elevation}
                         onChange={(e) => setElevation(e.target.value)}
                         placeholder="cth : 1500 - 1700 MASL"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Varieties */}
@@ -213,7 +213,7 @@ export default function UpdateProductDashboard({
                         value={varieties}
                         onChange={(e) => setVarieties(e.target.value)}
                         placeholder="cth : Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia "
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Taste */}
@@ -229,7 +229,7 @@ export default function UpdateProductDashboard({
                         value={taste}
                         onChange={(e) => setTaste(e.target.value)}
                         placeholder="cth : Vanilla, Tobacco, Cinnamon, Spices "
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Image Upload */}

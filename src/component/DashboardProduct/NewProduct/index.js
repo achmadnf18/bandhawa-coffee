@@ -107,7 +107,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                   <div className="flex items-center justify-between">
                     <Dialog.Title
                       as="h3"
-                      className="md:text-lg text-sm font-semibold leading-6 text-primary"
+                      className="md:text-lg text-sm font-semibold leading-6 text-[#101B49]"
                     >
                       Form Input Product
                     </Dialog.Title>
@@ -129,7 +129,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         onChange={onChangeValue}
                         required
                         placeholder="cth : Gayo Semi Wash"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Description */}
@@ -146,7 +146,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         onChange={onChangeValue}
                         required
                         placeholder="cth : Aceh, Gayo"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Type */}
@@ -162,7 +162,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         value={state?.addProduct?.type}
                         onChange={onChangeValue}
                         placeholder="cth : Arabica / Robusta"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Process */}
@@ -178,7 +178,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         value={state?.addProduct?.process}
                         onChange={onChangeValue}
                         placeholder="cth : Semi-Wash"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Elevation */}
@@ -194,7 +194,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         value={state?.addProduct?.elevation}
                         onChange={onChangeValue}
                         placeholder="cth : 1500 - 1700 MASL"
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Varieties */}
@@ -210,7 +210,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         value={state?.addProduct?.varieties}
                         onChange={onChangeValue}
                         placeholder="cth : Mix ( Tim-tim, Bourbon, Ateng super, Abyssinia "
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Taste */}
@@ -226,7 +226,7 @@ export default function NewProductDashboard({ openForm, onClose }) {
                         value={state?.addProduct?.taste}
                         onChange={onChangeValue}
                         placeholder="cth : Vanilla, Tobacco, Cinnamon, Spices "
-                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-primary  focus:border-primary block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
+                        className="h-10 px-4 mb-2 text-xs text-tertiary placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#101B49]  focus:border-[#101B49] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                       />
                     </div>
                     {/* Image Upload */}

@@ -1,4 +1,4 @@
-import { AnnotationIcon, UserIcon } from "@heroicons/react/outline";
+import { AnnotationIcon, HomeIcon, UserIcon } from "@heroicons/react/outline";
 import Link from "next/link";
 import { useRouter } from "next/router";
 import React from "react";
@@ -15,12 +15,32 @@ export default function SideBar() {
       <div className="py-4">
         <div
           className={
+            router.pathname == "/"
+              ? "flex items-center gap-2 py-2 bg-[#F3F4F5] rounded-md pl-5"
+              : "flex items-center gap-2 py-2  pl-5 hover:underline"
+          }
+        >
+          <a
+            href="/"
+            target="_blank"
+            className="text-sm font-medium inline-flex items-center gap-2 text-gray-700"
+          >
+            <HomeIcon
+              className="w-5 h-5 mb-0.5 text-gray-700"
+              aria-hidden="true"
+            />
+            Home
+          </a>
+        </div>
+
+        <div
+          className={
             router.pathname == "/admin/dashboard"
               ? "flex items-center gap-2 py-2 bg-[#F3F4F5] rounded-md pl-5"
               : "flex items-center gap-2 py-2  pl-5 hover:underline"
           }
         >
-          <Link href="/customer">
+          <Link href="/admin/dashboard">
             <a className="text-sm font-medium inline-flex items-center gap-2 text-gray-700">
               <UserIcon
                 className="w-5 h-5 mb-0.5 text-gray-700"
@@ -45,6 +65,23 @@ export default function SideBar() {
                 aria-hidden="true"
               />
               Our Teams
+            </a>
+          </Link>
+        </div>
+        <div
+          className={
+            router.pathname == "/admin/dashboard/teams"
+              ? "flex items-center gap-2 py-2 bg-[#F3F4F5] rounded-md pl-5"
+              : "flex items-center gap-2 py-2  pl-5 hover:underline"
+          }
+        >
+          <Link href="/comingsoon/">
+            <a className="text-sm font-medium inline-flex items-center gap-2 text-gray-700">
+              <AnnotationIcon
+                className="w-5 h-5 mb-0.5 text-gray-700"
+                aria-hidden="true"
+              />
+              Logout
             </a>
           </Link>
         </div>

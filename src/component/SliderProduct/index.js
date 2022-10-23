@@ -1,8 +1,10 @@
 // import Image from "next/image";
+import { useProducts } from "@/api/service/useProducts";
 import Link from "next/link";
 import Carousel from "react-multi-carousel";
 import "react-multi-carousel/lib/styles.css";
-import ListProducts from "../../data/listproduct.json";
+import Loading from "../Loading";
+export const BASE_API_IMAGE = process.env.api_image;
 
 export default function SliderProduct() {
   const responsive = {
@@ -22,7 +24,9 @@ export default function SliderProduct() {
       partialVisibilityGutter: 30,
     },
   };
-
+  const service = useProducts();
+  const doFetch = service?.getListProduct();
+  const getList = doFetch?.data?.data;
   return (
     <div className="mr-2 pt-6">
       <h2 className="md:text-4xl text-2xl uppercase font-bold text-center py-2">
@@ -50,34 +54,40 @@ export default function SliderProduct() {
         sliderClass=""
         slidesToSlide={1}
       >
-        {ListProducts?.map((row, i) => {
-          return (
-            <div className="text-center cursor-pointer" key={i + 1}>
-              <Link href={`/beans/${row?.id}/${row?.slug}`}>
-                <a>
-                  <div className="flex items-center justify-center">
-                    <div className="w-1/2 object-contain ">
-                      <div>
-                        <img
-                          src={row?.foto}
-                          className="object-contain  w-[100px] h-[100px]"
-                          // layout="fill"
-                          // objectFit="contain"
-                        />
+        {doFetch?.isFetching == true ? (
+          <Loading color="text-gray-200" />
+        ) : (
+          getList?.map((row, i) => {
+            return (
+              <div className="text-center cursor-pointer" key={i + 1}>
+                <Link href={`/beans/${row?.id}/${row?.slug}`}>
+                  <a>
+                    <div className="flex items-center justify-center">
+                      <div className="w-1/2 object-contain ">
+                        <div>
+                          <img
+                            src={`${BASE_API_IMAGE}/${row?.image}`}
+                            className="object-contain  w-[100px] h-[100px]"
+                            // layout="fill"
+                            // objectFit="contain"
+                          />
+                        </div>
                       </div>
                     </div>
-                  </div>
-                  <h5 className="text-sm font-bold uppercase pt-3">
-                    {row?.name}
-                  </h5>
-                  <p className="text-sm text-[#027879] leading-tight">
-                    {row?.taste}
-                  </p>
-                </a>
-              </Link>
-            </div>
-          );
-        })}
+                    <h5 className="text-sm font-bold uppercase pt-3">
+                      {row?.name}
+                    </h5>
+                    <p className="text-sm text-[#027879] leading-tight">
+                      {row?.taste.length > 40
+                        ? `${row?.taste.substring(0, 40)}...`
+                        : row?.taste}
+                    </p>
+                  </a>
+                </Link>
+              </div>
+            );
+          })
+        )}
       </Carousel>
     </div>
   );
