@@ -3,6 +3,7 @@ import { Dialog, Transition } from "@headlessui/react";
 import Loading from "@/component/Loading";
 import { useForm } from "react-hook-form";
 import swal from "sweetalert";
+import { useRouter } from "next/router";
 
 export default function UpdateProduct({
   isOpen,
@@ -12,6 +13,7 @@ export default function UpdateProduct({
   updateProducts,
   setIsOpenUpdate,
 }) {
+  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [fileSend, setFileSend] = useState(null);
   const [list, setList] = useState({});
@@ -75,6 +77,7 @@ export default function UpdateProduct({
           icon: "success",
         });
         product?.refetch();
+        router.reload();
         setIsOpenUpdate(false);
       }
     },
@@ -114,6 +117,7 @@ export default function UpdateProduct({
       elevation: data?.elevation,
       image: fileSend,
     });
+    event.target.reset();
   };
 
   if (!isOpen) return null;
@@ -299,11 +303,14 @@ export default function UpdateProduct({
                           {...register("elevation")}
                         />
                       </div>
-                      <input
-                        type="file"
-                        accept="image/*"
-                        onChange={uploadToClient}
-                      />
+                      <div className="flex items-center gap-3">
+                        <input
+                          type="file"
+                          accept="image/*"
+                          onChange={uploadToClient}
+                        />
+                        <img src={fileSend} width={130} height={100} />
+                      </div>
                       <div>
                         <label
                           htmlFor="description"
