@@ -52,7 +52,7 @@ export default function ListProduct({ productList }) {
                   Varieties
                 </h5>
                 <p className="text-sm leading-none text-[#027879]">
-                  {row?.varieties}
+                  {row?.variety}
                 </p>
               </div>
               <div className="md:col-span-2 col-span-12 md:ml-4 realative md:mt-6">
