@@ -16,7 +16,6 @@ export default function AdminDashboard() {
   const { getListProduct, addProducts, deleteProducts, updateProducts } =
     useProducts();
   const getList = getListProduct();
-
   return (
     <section className="container mx-auto my-10">
       <center>
