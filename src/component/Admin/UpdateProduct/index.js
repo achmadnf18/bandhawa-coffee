@@ -35,7 +35,7 @@ export default function UpdateProduct({
     //   elevation: list?.elevation,
     //   description: list?.description,
     // },
-    mode: "onBlur",
+    mode: "onChange",
   });
 
   const { register, handleSubmit, reset } = form;
@@ -77,8 +77,8 @@ export default function UpdateProduct({
           icon: "success",
         });
         product?.refetch();
-        router.reload();
         setIsOpenUpdate(false);
+        router.reload();
       }
     },
     onError: (err) => {
@@ -102,6 +102,7 @@ export default function UpdateProduct({
       .replace(/([a-z])([A-Z])/g, "$1-$2")
       .replace(/[\s_]+/g, "-")
       .toLowerCase();
+
     doUpdate.mutate({
       name: data?.name,
       slug: slug,
@@ -109,7 +110,7 @@ export default function UpdateProduct({
       weight: parseFloat(data?.weight),
       available: data?.available,
       taste: data?.taste,
-      score: parseFloat(data?.weight),
+      score: parseFloat(data?.score),
       variety: data?.variety,
       description: data?.description,
       type: data?.type,
@@ -257,10 +258,6 @@ export default function UpdateProduct({
                         <select
                           name="type"
                           {...register("type")}
-                          // value={state?.konfirmasiCustomer?.nama_bank}
-                          // onChange={onChangeValue}
-                          // onChange={(e) => setIdBank(e.target.value)}
-                          // defaultValue={idBank}
                           required
                           className="h-10 px-4 mb-2 text-lg text-gray-500 placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#4283F4] focus:border-[#4283F4] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                         >
@@ -268,6 +265,7 @@ export default function UpdateProduct({
 
                           <option value="Arabica">Arabica </option>
                           <option value="Robusta">Robusta</option>
+                          <option value="-">-</option>
                         </select>
                       </div>
                       <div>
@@ -277,10 +275,6 @@ export default function UpdateProduct({
                         <select
                           name="beans"
                           {...register("beans")}
-                          // value={state?.konfirmasiCustomer?.nama_bank}
-                          // onChange={onChangeValue}
-                          // onChange={(e) => setIdBank(e.target.value)}
-                          // defaultValue={idBank}
                           required
                           className="h-10 px-4 mb-2 text-lg text-gray-500 placeholder-secondary border focus:shadow-outline mt-1 focus:ring-[#4283F4] focus:border-[#4283F4] block w-full shadow-sm sm:text-sm border-gray-300 rounded-md"
                         >
@@ -288,6 +282,7 @@ export default function UpdateProduct({
 
                           <option value="Green">Green </option>
                           <option value="Roasted">Roasted</option>
+                          <option value="-">-</option>
                         </select>
                       </div>
                       <div>

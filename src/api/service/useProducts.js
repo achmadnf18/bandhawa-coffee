@@ -10,8 +10,6 @@ export const useProducts = () => {
   const getListProduct = () =>
     useQuery([`${apiPath}`], () => doFetchList(), {
       keepPreviousData: true,
-      refetchOnMount: true,
-      staleTime: 3000,
     });
 
   const addProducts = ({ onSuccess, onError }) =>

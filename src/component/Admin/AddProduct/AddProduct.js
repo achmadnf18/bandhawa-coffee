@@ -12,11 +12,11 @@ export default function AddProduct({
   getList,
   setIsOpen,
 }) {
-  const router = useRouter();
   const [isLoading, setIsLoading] = useState(false);
   const [fileSend, setFileSend] = useState(null);
-  const { register, handleSubmit } = form;
-
+  const { register, handleSubmit, reset } = form;
+  const router = useRouter();
+  0;
   const uploadToClient = async (event) => {
     const files = event.target.files;
     const file = files[0];
@@ -46,8 +46,8 @@ export default function AddProduct({
           icon: "success",
         });
         getList?.refetch();
-        router?.reload();
         setIsOpen(false);
+        router.reload();
       }
     },
     onError: (err) => {
@@ -68,6 +68,7 @@ export default function AddProduct({
       .replace(/([a-z])([A-Z])/g, "$1-$2")
       .replace(/[\s_]+/g, "-")
       .toLowerCase();
+
     doAdd.mutate({
       name: data?.name,
       slug: slug,
@@ -83,6 +84,7 @@ export default function AddProduct({
       elevation: data?.elevation,
       image: fileSend,
     });
+    reset(data);
     event.target.reset();
   };
 
@@ -234,6 +236,7 @@ export default function AddProduct({
 
                           <option value="Arabica">Arabica </option>
                           <option value="Robusta">Robusta</option>
+                          <option value="-">-</option>
                         </select>
                       </div>
                       <div>
@@ -254,6 +257,7 @@ export default function AddProduct({
 
                           <option value="Green">Green </option>
                           <option value="Roasted">Roasted</option>
+                          <option value="-">-</option>
                         </select>
                       </div>
                       <div>

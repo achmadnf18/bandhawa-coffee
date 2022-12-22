@@ -35,8 +35,8 @@ export default function DetailGreenBeans() {
       <section title="detail-green-bean">
         <div className="container mx-auto md:px-4 px-10 pt-20 pb-10">
           <Link href="/beans/green-bean" passHref>
-            <button className="text-xs bg-transparent gap-3 inline-flex px-4 py-2 rounded-full items-center justify-between border-[#101B49]  text-[#101B49] ">
-              <ChevronLeftIcon className="w-4 h-4 text-[#101B49] " />
+            <button className="text-xs bg-[#101B49] gap-3 inline-flex px-4 py-2 rounded-full items-center justify-between text-white">
+              <ChevronLeftIcon className="w-4 h-4 text-white " />
               Back
             </button>
           </Link>
@@ -108,3 +108,10 @@ export default function DetailGreenBeans() {
     </Layout>
   );
 }
+
+// Ketentuan Upload / Update
+// - Nama Produk / Coffee tidak bisa sama (Jika ada yang sama tolong di tambahkan nama processnya) Cth : Aceh Gayo Wine , Aceh Gayo Natural
+// - File Size Maximal 1 Mb
+// - Jika available maka pilih Get Inquity
+// - Jika field kosong maka isi dengan tanda " - " atau pilih " - "
+// - Score harus bilangan bulat tidak boleh ada koma

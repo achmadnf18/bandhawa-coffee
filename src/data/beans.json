@@ -1,0 +1,130 @@
+{
+  "roasted":[
+    {
+      "id": 1,
+      "name":"Arabica Roasted Beans",
+      "description": "Arabica Temanggung Natural 200g",
+      "slug": "temanggung",
+      "region": "Temanggung, Jawa Tengah",
+      "varietal" : "Arabica (Mix: Kartika, Lini S)",
+      "elevation": "1300-1600 MDPL",
+      "process" : "Natural",
+      "taste" : "Tamarind, Strawberry, Chocolate, Brown Sugar",
+      "foto" : "/assets/beans/roasted-beans/temanggung.png"
+    },
+    {
+      "id": 2,
+      "name":"Arabica Roasted Beans",
+      "description":"Arabica Halu Natural Anaerob 200g",
+      "slug": "halu-natural",
+      "region": "Gunung Halu, Jawa Barat",
+      "varietal" : "Arabica (Mix: Sigararutang, Ateng, S795 )",
+      "elevation": "1200-1500 MDPL",
+      "process" : "Natural Anaerob",
+      "taste" : "Malic Acid Pleasant, Passion Fruit, Brown Sugar",
+      "foto" : "/assets/beans/roasted-beans/halu-natural.png"
+    },
+    {
+      "id": 3,
+      "name":"Arabica Roasted Beans",
+      "description" : "Arabica Halu Washed 200g",
+      "slug": "halu-washed",
+      "region": "Gunung Halu, Jawa Barat",
+      "varietal" : "Arabica (Mix: Sigararutang, Ateng, S795 )",
+      "elevation": "1200-1500 MDPL",
+      "process" : "Washed (Double Washed)",
+      "taste" : "Floral, Lemongrass, Chamomile, Citrus, Black Tea",
+      "foto" : "/assets/beans/roasted-beans/halu-double-soak.png"
+    },
+    {
+      "id": 4,
+      "name":"Arabica Java Preanger Washed",
+      "description" : "Arabica Java Preanger Washed 200g",
+      "slug": "arabica-java-preanger-washed",
+      "region": "Lembang, Jawa Barat",
+      "varietal" : "Arabica (Mix: Lini S, Cattura, Typica)",
+      "elevation": "1400-1600 MDPL",
+      "process" : "Washed (Full Wash)",
+      "taste" : "Herbs, Spicy, Tropical Fruit, Citrus, Lemonade, Medium Body",
+      "foto" : "/assets/beans/roasted-beans/halu-double-soak.png"
+    },
+    {
+      "id": 5,
+      "name":"Arabica Ungaran Washed",
+      "description" : "Arabica Ungaran Washed 200g",
+      "slug": "ungaran-full-wash",
+      "region": "Ungaran, Jawa Tengah",
+      "varietal" : "Arabica (Mix: Lini S, Kartika)",
+      "elevation": "1300-1400 MDPL",
+      "process" : "Washed (Full Wash)",
+      "taste" : "Floral, Tea Like, Medium Body",
+      "foto" : "/assets/beans/roasted-beans/unggaran-full-wash.png"
+    },
+    {
+      "id": 6,
+      "name":"Arabica Ungaran Natural",
+      "description" : "Arabica Ungaran Natural 200g",
+      "slug": "ungaran-natural",
+      "region": "Ungaran, Jawa Tengah",
+      "varietal" : "Arabica (Mix: Lini S, Kartika)",
+      "elevation": "1300-1400 MDPL",
+      "process" : "Washed (Full Wash)",
+      "taste" : "Herbs, Tropical Fruit, Jasmine, Tea Like",
+      "foto" : "/assets/beans/roasted-beans/unggaran-natural.png"
+    },
+    {
+      "id": 7,
+      "name":"Arabica Toraja Mamasa",
+      "description" : "Arabica Toraja Mamasa Wet Hull 200g",
+      "slug": "toraja-mamasa",
+      "region": "Toraja, Sulawesi Selatan",
+      "varietal" : "Arabica (Mix: Lini S796)",
+      "elevation": "1200-1400 MDPL",
+      "process" : "Wet Hull (Semi Wash)",
+      "taste" : "Citrus, Chocolate, Vanilla, Tea Like",
+      "foto" : "/assets/beans/roasted-beans/toraja-mamasa.png"
+    },
+    {
+      "id": 8,
+      "name":"Flores Bajawa Wolowio",
+      "description" : "Arabica Flores Bajawa Wolowio Washed 200g",
+      "slug": "flores-bajawa",
+      "region": "Flores, NTT",
+      "varietal" : "Arabica (Catimor)",
+      "elevation": "1200-1500 MDPL",
+      "process" : "Washed (Full Wash)",
+      "taste" : "Medium Body, Round Mouthfeel, caramel, Spicy, Fruity",
+      "foto" : "/assets/beans/roasted-beans/toraja-mamasa.png"
+    },
+    {
+      "id": 9,
+      "name":"Arabica Puntang Natural",
+      "description" : "Arabica Puntang Natural 200g",
+      "slug": "puntang",
+      "region": "Puntang, Jawa Barat",
+      "varietal" : "Arabica (Typica)",
+      "elevation": "1300-1500 MDPL",
+      "process" : "Natural",
+      "taste" : "Apple, Wild Berries, Sweet Caramel",
+      "foto" : "/assets/beans/roasted-beans/puntang.png"
+    },
+    {
+      "id": 10,
+      "name":"Arabica Kamojang Natural",
+      "description" : "Arabica Kamojang Natural 200g",
+      "slug": "puntang",
+      "region": "Garut, Jawa Barat",
+      "varietal" : "Arabica (Typica)",
+      "elevation": "1300-1500 MDPL",
+      "process" : "Natural",
+      "taste" : "Apple, Wild Berries, Sweet Caramel",
+      "foto" : "/assets/beans/roasted-beans/kamojang.png"
+    }
+  ],
+  "green" :[
+    {
+      "id": 100,
+      "name":"greenbeans"
+    }
+  ]
+}

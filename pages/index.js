@@ -1,4 +1,4 @@
-import BeansItem from "../src/component/Beans";
+import About from "@/component/About/about";
 import Hero from "../src/component/Hero";
 import KeyFeatureComp from "../src/component/KeyFeatures";
 import OurGalleryComp from "../src/component/OurGalerry";
@@ -11,7 +11,7 @@ export default function Home() {
   return (
     <Layout pageTitle="Home">
       <Hero />
-      <BeansItem />
+      <About />
       <PhylosophyComp />
       <KeyFeatureComp />
       <OurGalleryComp />

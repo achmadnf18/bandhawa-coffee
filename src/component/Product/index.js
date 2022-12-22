@@ -23,7 +23,10 @@ export default function Product({ doFetch }) {
     <section id="product" className="section-product h-fit py-10 ">
       <div className="container mx-auto">
         <div className="md:pt-2 pt-8 pb-10">
-          {productList == undefined ? (
+          {productList?.length == 0 && (
+            <div className="text-center my-28">- Beans Not Found-</div>
+          )}
+          {doFetch?.isFetching == true ? (
             <Loading color="text-gray-200" />
           ) : (
             <ListProduct productList={productList} />
