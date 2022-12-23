@@ -24,7 +24,11 @@ export default function Footer() {
         >
           <img src="/assets/footer/ig.svg" className="w-10 h-10" />
         </a>
-        <a target="_blank" rel="noreferrer" href="https://wa.me/081210095201">
+        <a
+          target="_blank"
+          rel="noreferrer noopenner"
+          href="https://wa.me/085290100080"
+        >
           <img src="/assets/footer/wa.svg" className="w-10 h-10" />
         </a>
       </div>

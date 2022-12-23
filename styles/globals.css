@@ -16,6 +16,7 @@ body {
 .hero-image{
   /* background-image: url('../public/assets/background/hero-image.png'); */
   background-image: url('../public//assets//background/bg-images.jpg');
+  /* filter: brightness(.75) ; */
 }
 
 .phylo-image{

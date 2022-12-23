@@ -23,7 +23,7 @@ export default function ProductDetails() {
   };
   return (
     <Layout pageTitle={`Detail-Coffee`}>
-      <BannerHeader title="beans" />
+      <BannerHeader title="Detail Bean" />
       <div className="container lg:mx-auto mx-5 ">
         <section title="detail-bean">
           <DetailBeans detailProduct={detailProduct} />

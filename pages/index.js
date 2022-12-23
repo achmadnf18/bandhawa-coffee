@@ -1,4 +1,3 @@
-import About from "@/component/About/about";
 import Hero from "../src/component/Hero";
 import KeyFeatureComp from "../src/component/KeyFeatures";
 import OurGalleryComp from "../src/component/OurGalerry";
@@ -11,7 +10,6 @@ export default function Home() {
   return (
     <Layout pageTitle="Home">
       <Hero />
-      <About />
       <PhylosophyComp />
       <KeyFeatureComp />
       <OurGalleryComp />
