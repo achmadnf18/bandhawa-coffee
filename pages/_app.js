@@ -7,6 +7,9 @@ import { QueryClientProvider } from "@tanstack/react-query";
 import getQueryClient from "@/config/react-query";
 import { ReactQueryDevtools } from "@tanstack/react-query-devtools";
 import { useState } from "react";
+import { library } from "@fortawesome/fontawesome-svg-core";
+import { fab } from "@fortawesome/free-brands-svg-icons";
+library.add(fab);
 
 function MyApp({ Component, pageProps }) {
   useEffect(() => {

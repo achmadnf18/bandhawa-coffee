@@ -17,7 +17,7 @@ const navList = [
   },
   {
     id: 2,
-    title: "Phyloshopy",
+    title: "philosophy",
     to: "/phyloshophy",
   },
   {

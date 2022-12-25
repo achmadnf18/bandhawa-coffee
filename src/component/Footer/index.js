@@ -2,7 +2,8 @@ import React from "react";
 
 export default function Footer() {
   return (
-    <footer className="bg-[#027879] py-10">
+    // bg-[#027879]
+    <footer className=" bg-[#265A3F] py-10">
       <div className="flex items-center justify-center">
         <img
           src="/assets/footer-logo.png"
