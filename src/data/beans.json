@@ -108,23 +108,324 @@
       "taste" : "Apple, Wild Berries, Sweet Caramel",
       "foto" : "/assets/beans/roasted-beans/puntang.png"
     },
+   
     {
       "id": 10,
-      "name":"Arabica Kamojang Natural",
-      "description" : "Arabica Kamojang Natural 200g",
-      "slug": "puntang",
+      "name":"Arabica Kamojang Black Honey",
+      "description" : "Arabica Kamojang Black Honey 200g",
+      "slug": "kamojang-black",
       "region": "Garut, Jawa Barat",
-      "varietal" : "Arabica (Typica)",
+      "varietal" : "Arabica (Mix: Kartika, Lini S, Sigararutang)",
       "elevation": "1300-1500 MDPL",
-      "process" : "Natural",
-      "taste" : "Apple, Wild Berries, Sweet Caramel",
+      "process" : "Black Honey",
+      "taste" : "Herbs, Fruty, Sweet, Medium Body",
       "foto" : "/assets/beans/roasted-beans/kamojang.png"
+    },
+    {
+      "id": 11,
+      "name":"Arabica Kamojang Wine",
+      "description" : "Arabica Kamojang Wine 200g",
+      "slug": "kamojang-wine",
+      "region": "Garut, Jawa Barat",
+      "varietal" : "Arabica (Mix: Kartika, Lini S, Sigararutang)",
+      "elevation": "1300-1500 MDPL",
+      "process" : "Wine",
+      "taste" : "Funky, Wild Berries, Sweet, Medium Body",
+      "foto" : "/assets/beans/roasted-beans/kamojang.png"
+    },
+    {
+      "id": 12,
+      "name":"Arabica Kamojang Washed",
+      "description" : "Arabica Kamojang Washed 200g",
+      "slug": "kamojang-washed",
+      "region": "Garut, Jawa Barat",
+      "varietal" : "Arabica (Mix: Kartika, Lini S, Sigararutang)",
+      "elevation": "1300-1500 MDPL",
+      "process" : "Washed (Full Wash)",
+      "taste" : "Fruty, Sweet, Low Body, Clean After Taste",
+      "foto" : "/assets/beans/roasted-beans/kamojang.png"
+    },
+    
+    {
+      "id": 13,
+      "name":"Arabica Argopuro Natural Anaerob",
+      "description" : "Arabica Argopuro Natural Anaerob 200g",
+      "slug": "argopuro-Anaerob",
+      "region": "Argopuro, Jawa Timur",
+      "varietal" : "Arabica (Kartika, Lini S)",
+      "elevation": "1200-1400 MDPL",
+      "process" : "Natural",
+      "taste" : "Green Apple, Sweet, Floral, Mild Acidity",
+      "foto" : "/assets/beans/roasted-beans/argopuro.png"
+    },
+    {
+      "id": 14,
+      "name":"Arabica Argopuro Natural Lactic",
+      "description" : "Arabica Argopuro Natural Lactic 200g",
+      "slug": "argopuro-lactic",
+      "region": "Argopuro, Jawa Timur",
+      "varietal" : "Arabica (Kartika, Lini S)",
+      "elevation": "1200-1400 MDPL",
+      "process" : "Natural",
+      "taste" : "Green Apple, Sweet, Floral, Tea Like",
+      "foto" : "/assets/beans/roasted-beans/argopuro.png"
+    },
+    {
+      "id": 15,
+      "name":"Arabica Argopuro Washed",
+      "description" : "Arabica Argopuro Washed 200g",
+      "slug": "argopuro-washed",
+      "region": "Argopuro, Jawa Timur",
+      "varietal" : "Arabica (Kartika, Lini S)",
+      "elevation": "1200-1400 MDPL",
+      "process" : "Natural",
+      "taste" : "Fruity, Citrus, Chocolate",
+      "foto" : "/assets/beans/roasted-beans/argopuro.png"
+    },
+    {
+      "id": 16,
+      "name":"House Blend Arabica & Robusta for Espresso",
+      "description" : "House Blend Arabica & Robusta for Espresso (Kopi Susu)",
+      "slug": "house-blend-arabica-robusta",
+      "region": "Robusta (Natural) : Central Java || Arabica Wet Hull (Semi Wash) : NAD",
+      "varietal" : "-",
+      "elevation": "-",
+      "process" : "-",
+      "taste" : "Dark Choco, Brown Sugar, Bold Body",
+      "foto" : "/assets/beans/roasted-beans/house-blend.png"
     }
+  
   ],
   "green" :[
     {
-      "id": 100,
-      "name":"greenbeans"
+      "id": 25,
+      "name":"Aceh Gayo Wine Process",
+      "slug": "aceh-gayo-green-beans",
+      "harvest": "April - June & October - December",
+      "process" : "Wine",
+      "profile" : "filter",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/aceh-gayo-fully-green-min.jpg"
+    },
+    {
+      "id": 26,
+      "name":"Aceh Gayo Natural Process",
+      "slug": "aceh-gayo-green-beans-natural",
+      "harvest": "April - June & October - December",
+      "process" : "Natural",
+      "profile" : "Filter",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/aceh-gayo-natural-green-min.jpg"
+    },
+    {
+      "id": 27,
+      "name":"Aceh Gayo Honey Process",
+      "slug": "aceh-gayo-green-beans-honey",
+      "harvest": "April - June & October - December",
+      "process" : "Honey",
+      "profile" : "Filter",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/aceh-gayo-honey-green-min.jpg"
+    },
+    {
+      "id": 28,
+      "name":"Aceh Gayo Washed Process",
+      "slug": "aceh-gayo-washed-beans-honey",
+      "harvest": "April - June & October - December",
+      "process" : "Washed",
+      "profile" : "Filter",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/aceh-gayo-washed-green-min.jpg"
+    },
+    {
+      "id": 29,
+      "name":"Aceh Gayo Wet Hull Process",
+      "slug": "aceh-gayo-washed-beans-honey",
+      "harvest": "April - June & October - December",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/aceh-gayo-wet-green-min.jpg"
+    },
+    {
+      "id": 30,
+      "name":"Lintong Wet Hull",
+      "slug": "lintong-wet-hull",
+      "harvest": "October - December",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/lintong-wet-hull.jpg"
+    },
+    {
+      "id": 30,
+      "name":"Mandheling Wet Hull",
+      "slug": "mandheling-wet-hull",
+      "harvest": "October - December",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Sematera",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 31,
+      "name":"West Java Natural Process",
+      "slug": "west-java-natural",
+      "harvest": "May - June",
+      "process" : "Natural",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 32,
+      "name":"West Java Natural Anaerob Process",
+      "slug": "west-java-natural-Anaerob",
+      "harvest": "May - June",
+      "process" : "Natural Anaerob",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 33,
+      "name":"West Java Honey Process",
+      "slug": "west-java-honey",
+      "harvest": "May - June",
+      "process" : "Honey",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 34,
+      "name":"West Java Washed Process",
+      "slug": "west-java-washed",
+      "harvest": "May - June",
+      "process" : "Washed",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 35,
+      "name":"Central Java Natural Process",
+      "slug": "central-java-natural",
+      "harvest": "May - June",
+      "process" : "Natural",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 36,
+      "name":"Central Java Washed Process",
+      "slug": "central-java-washed",
+      "harvest": "May - June",
+      "process" : "Washed",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 37,
+      "name":"Central Java Honey Process",
+      "slug": "central-java-honey",
+      "harvest": "May - June",
+      "process" : "Honey",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 38,
+      "name":"Central Java Wet Hull Process",
+      "slug": "central-java-wet-hull",
+      "harvest": "May - June",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 39,
+      "name":"East Java Natural Process",
+      "slug": "east-java-natural",
+      "harvest": "May - June",
+      "process" : "Natural",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 40,
+      "name":"East Java Natural Anaerob Process",
+      "slug": "east-java-natural-anaerob",
+      "harvest": "May - June",
+      "process" : "Natural Anaerob",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 41,
+      "name":"East Java Honey Process",
+      "slug": "east-java-honey",
+      "harvest": "May - June",
+      "process" : "Honey",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 42,
+      "name":"East Java Washed Process",
+      "slug": "east-java-washed",
+      "harvest": "May - June",
+      "process" : "Washed",
+      "profile" : "Filter",
+      "land" : "Java",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 43,
+      "name":"Toraja Wet Hull Process",
+      "slug": "troaja-wet-hull",
+      "harvest": "June - August",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Sulawesi",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 44,
+      "name":"Kintamani Washed Process",
+      "slug": "kintamani-washed",
+      "harvest": "May - June",
+      "process" : "Washed",
+      "profile" : "Filter",
+      "land" : "Bali",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 45,
+      "name":"Kintamani Wet Hull Process",
+      "slug": "kintamani-wet-hull",
+      "harvest": "May - June",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Bali",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
+    },
+    {
+      "id": 46,
+      "name":"Manggarai Wet Hull Process",
+      "slug": "manggarai-wet-hull",
+      "harvest": "May - June",
+      "process" : "Wet Hull",
+      "profile" : "Espresso",
+      "land" : "Flores",
+      "foto" : "/assets/beans/green-beans/mandheling-wet-hull.jpg"
     }
   ]
 }
