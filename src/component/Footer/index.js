@@ -14,7 +14,7 @@ export default function Footer() {
         <a
           target="_blank"
           rel="noreferrer"
-          href="mailto:yuliana.astuti@outlook.com"
+          href="mailto:salesmarketing@cmsi-id.com"
         >
           <img src="/assets/footer/email.svg" className="w-10 h-10" />
         </a>

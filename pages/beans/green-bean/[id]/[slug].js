@@ -71,11 +71,11 @@ export default function DetailGreenBeans() {
 
             {/* Right */}
             <div className="flex items-center justify-center">
-              <div className=" ">
+              <div className="sm:w-[450px] sm:h-[450px] w-[200px] h-[200px]  bg-center ">
                 <img
                   src={detailProduct?.foto}
                   alt="product.jpg"
-                  className="object-contain sm:w-[450px] sm:h-[450px] w-[200px] h-[200px] "
+                  className="rounded-lg"
                   loading="lazy"
                 />
               </div>

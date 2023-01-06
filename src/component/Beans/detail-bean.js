@@ -10,13 +10,15 @@ export default function DetailBeans({ detailProduct }) {
           <h3 className="text-4xl uppercase font-bold leading-none">
             {detailProduct?.name}
           </h3>
-          {/* Location */}
+        </div>
+
+        {/* Origin */}
+        <div className="my-12">
+          <h4 className="text-lg leading-none font-bold">Region</h4>
           <p className="text-lg leading-none font-medium italic text-[#027879]">
             {detailProduct.region}
           </p>
         </div>
-
-        {/* Origin */}
         <div className="my-12">
           <h4 className="text-lg leading-none font-bold">Description</h4>
           <p className="text-lg leading-none font-medium italic text-[#027879]">
