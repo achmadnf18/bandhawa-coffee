@@ -11,11 +11,7 @@ export default function Footer() {
         />
       </div>
       <div className="flex items-center justify-center pb-4 gap-4">
-        <a
-          target="_blank"
-          rel="noreferrer"
-          href="mailto:salesmarketing@bja-id.com"
-        >
+        <a target="_blank" rel="noreferrer" href="mailto:bandhawa@bja-id.com">
           <img src="/assets/footer/email.svg" className="w-10 h-10" />
         </a>
         <a

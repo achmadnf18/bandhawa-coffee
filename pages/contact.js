@@ -22,7 +22,7 @@ export default function contact() {
           <div className="flex flex-col items-center justify-center lg:border-r lg:border-r-[#265A3F]  border-dashed">
             <div className="w-20 h-20 mb-4"> {email}</div>
             <h1 className="lg:text-3xl text-xl">Email</h1>
-            <h2 className="lg:text-lg text-sm">salesmarketing@bja-id.com</h2>
+            <h2 className="lg:text-lg text-sm">bandhawa@bja-id.com</h2>
           </div>
           <div className="flex flex-col items-center justify-center ">
             <div className="w-20 h-20 mb-4"> {instagram}</div>
