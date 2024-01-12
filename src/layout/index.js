@@ -13,7 +13,10 @@ function Layout({ children }) {
           name="viewport"
           content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no"
         />
-
+        <meta
+          name="linguana-site-verification"
+          content="DP8ItGjtlG3ZjwN4ROOJ"
+        />
         <meta name="author" content="bandhawa-team"></meta>
         <meta name="publisher" content="Bandha Team"></meta>
         <meta property="og:url" content="https://bandhawacoffeebeans.com/" />
